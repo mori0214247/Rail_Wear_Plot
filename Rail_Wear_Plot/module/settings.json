@@ -2,6 +2,8 @@
     "File_Directory": "D:/202310_断面摩耗データ解析/千代田線断面摩耗データ",
     "A_Rail_nonWear": "D:/202310_断面摩耗データ解析/A_Rail_nonWear.csv",
     "B_Rail_nonWear": "D:/202310_断面摩耗データ解析/B_Rail_nonWear.csv",
+    "origin_X": 32.5,
+    "origin_Y": 120.5,
     //"str": 100,
     //リスト
     "List": [

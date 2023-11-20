@@ -17,8 +17,12 @@ print(fld)
 A_Rail_nonWear = "D:/202310_断面摩耗データ解析/A_Rail_nonWear.csv"
 B_Rail_nonWear = "D:/202310_断面摩耗データ解析/B_Rail_nonWear.csv"
 
-ARnW = pd.read_csv(A_Rail_nonWear,encoding="shift_jis",na_values=[0])
-BRnW = pd.read_csv(B_Rail_nonWear,encoding="shift_jis",na_values=[0])
+ARnW = pd.read_csv(A_Rail_nonWear,encoding="shift_jis",na_values=[0])#新品レール形状
+BRnW = ARnW.iloc[::-1]#pd.read_csv(B_Rail_nonWear,encoding="shift_jis",na_values=[0])#
+
+print(ARnW)
+print(BRnW)
+
 
 origin_X = 32.5
 origin_Y = 120.5

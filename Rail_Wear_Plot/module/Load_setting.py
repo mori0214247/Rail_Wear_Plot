@@ -1,4 +1,4 @@
-#.jsoncファイル設定読み込み関数
+#.jsoncファイル設定読み込みモジュール
 #.jsonは//でコメントが書けるがPythonではエラーを吐く、この関数で読み飛ばせるようにする
 
 import json
@@ -6,6 +6,7 @@ import re
 from pathlib import Path
 
 mod_dir=Path(__file__).resolve().parent
+print(mod_dir)
 #今実行している.pyコードのディレクトリの一つ親のディレクトリを返す。要はmoduleフォルダ
 
 def load_json(filename: str, encoding: str = 'utf-8'):

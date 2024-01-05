@@ -5,6 +5,7 @@
     "Output_Directory": "D:/202310_断面摩耗データ解析/解析/output",
     "origin_X": 0,
     "origin_Y": 120.5,
+    "Output_graph_format": "png",
     //キロ程レンジ指定したい場合に使用。範囲指定しない場合は[0,0]
     "kirotei_range": [
         8700,

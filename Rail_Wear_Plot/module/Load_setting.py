@@ -1,13 +1,15 @@
-#.jsoncファイル設定読み込みモジュール
-#.jsonは//でコメントが書けるがPythonではエラーを吐く、この関数で読み飛ばせるようにする
+#.jsoncファイル設定読み込みモジュール(ググって自作した、汎用モジュール)
+#.jsonは//でコメントが書けるがPythonではエラーを吐く、この関数で読み飛ばせるようにしてる
 
 import json
 import re
 from pathlib import Path
 
+#今実行している.pyのカレントディレクトリの一つ上の階層のディレクトリを取得する。
+#Pythonのリポジトリ構造の推奨として、"module"フォルダ内にそれぞれのモジュール.pyを入れる
+#また、"settings.json"も"module"フォルダ内に入れておいてる
+
 mod_dir=Path(__file__).resolve().parent
-print(mod_dir)
-#今実行している.pyコードのディレクトリの一つ親のディレクトリを返す。要はmoduleフォルダ
 
 def load_json(filename: str, encoding: str = 'utf-8'):
     with open(mod_dir.joinpath(filename),'r',encoding=encoding)as f:

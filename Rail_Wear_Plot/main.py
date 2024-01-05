@@ -23,7 +23,7 @@ def main():
     Kirotei_range_settings=ini_Setting.Kirotei_range
     graph_foramat=ini_Setting.result_output_graph_format
     header_list = ['キロ程','右断面_Aレール面積','A面積比率','左断面_Bレール面積','B面積比率','データ欠損点数']
-    graph_organizer(ini_Setting.result_output_dir,graph_foramat)    
+    
     for filename in ini_Setting.Analyze_list:
         df=csv_file_load.InputData.read_csv_files(filename,ini_Setting.dir_path)
         output_result_dict_list=[]
@@ -92,7 +92,7 @@ def main():
             writer=csv.DictWriter(f,fieldnames=header_list,lineterminator="\n")
             writer.writeheader()
             writer.writerows(output_result_dict_list)
-        
+    graph_organizer(ini_Setting.result_output_dir,graph_foramat)#グラフ出力が済んだら、フォルダへコピー、整理してくれるやつ       
          
 if __name__ == '__main__':
     main()

@@ -1,10 +1,8 @@
-Sample Module Repository
-========================
+・Rail_Wear_Plodがパッケージです
 
-This simple project is an example repo for Python projects.
+・requirements.txtを参照して必要なパッケージをインストールできます
+　https://note.nkmk.me/python-pip-install-requirements/
 
-`Learn more <http://www.kennethreitz.org/essays/repository-structure-and-python>`_.
+・module内のsettings.jsonを変えて設定変更できます、
+　キロ程範囲とか、データディレクトリとか色々
 
----------------
-
-If you want to learn more about ``setup.py`` files, check out `this repository <https://github.com/kennethreitz/setup.py>`_.
